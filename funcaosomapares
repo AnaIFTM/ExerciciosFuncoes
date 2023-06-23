@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+void somaPar(int a, int b){
+	int i, soma = 0;
+	for(i=a; i<=b; i++){
+		if (i%2==0){
+			soma=soma+i;
+		}
+	}
+	printf("%d\n", soma);
+}
+int main(){
+	int a, b;
+	scanf("%d %d", &a, &b);
+	somaPar(a, b);
+	return 0;
+}
+/*Faça uma função capaz de receber dois números a e b, onde o primeiro sempre é menor
+que o segundo, e calcula a soma dos números pares compreendidos entre os dois números
+lidos.*/
