@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+int somatermos(int a1, int an, int n){
+	return (n * (a1 + an))/2;
+}
+int main(){
+	int a1, an, n;
+	scanf("%d %d %d", &a1, &an, &n);
+	n = somatermos(a1, an, n);
+	printf("%d", n);
+	return 0;
+}
+/*Crie uma função capaz de determinar a 
+soma dos n primeiros termos de uma P.A. 
+É necessário receber o primeiro elemento, 
+o n-ésimo elemento e o valor de n.*/
