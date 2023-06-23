@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+int pares(int a, int b, int c){
+	int contador=0;
+	if (a%2==0){
+		contador+=1;
+	}
+	if (b%2==0){
+		contador+=1;
+	}
+	if (c%2==0){
+		contador+=1;
+	}
+	return contador;
+}
+int main(){
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	a = pares(a, b, c);
+	printf("%d\n", a);
+	return 0;
+}
+/*Crie uma função capaz de receber 3 números 
+a, b e c e retornar quantos são pares.*/
