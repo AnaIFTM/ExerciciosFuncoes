@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+double somanumero(double a, double b, double c){
+	double maior=0, menor=0;
+	if (a>b){
+		maior=a;
+		menor=b;
+	} else {		
+		maior=b;
+		menor=a;		
+	}
+	if (c>maior){
+		maior=c;
+	}
+	if (c<menor){
+		menor=c;
+	}
+	return maior+menor;
+}
+int main(){
+	double a, b, c;
+	scanf("%lf %lf %lf", &a, &b, &c);
+	printf("%.0lf", somanumero(a, b, c));
+	return 0;
+}
+/*Faça uma função capaz de receber 3 números e 
+retornar a soma do maior com o menor número.*/
