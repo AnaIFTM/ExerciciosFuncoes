@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+void imprimeNumero(int n){
+	int i;
+	for (i=1; i<=n; i++){
+		printf("%d ", i);
+	}
+}
+int main(){
+	int n;
+	scanf("%d", &n);
+	imprimeNumero(n);
+	return 0;
+}
+/*Crie uma função capaz de receber 1 número n 
+qualquer e imprimir todos os números de 1 a n.*/
