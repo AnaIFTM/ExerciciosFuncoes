@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+double calcjuros(double c, int m, double t){
+	double j = c * m * (t/100);
+	return j;
+}
+int main(){
+	double j, c, t;
+	int m;
+	scanf("%lf %d %lf", &c, &m, &t);
+	printf("%.2lf\n", calcjuros(c, m, t));
+	return 0;
+}
+/* Supondo um empréstimo no valor de c Reais, por m meses a juros de t% ao mês, crie
+uma função capaz de descobrir os juros cobrados nesse empréstimo. A fórmula para
+cálculo dos juros simples é a que se segue: j = c * m * t.                */
