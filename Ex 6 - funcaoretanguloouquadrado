@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+double retquad(double b, double h){
+	if (b==h){
+		b=1;
+	}
+	else{
+		b=0;
+	}
+	return b;
+}
+int main(){
+	double b, h;
+	scanf("%lf %lf", &b, &h);
+	printf("%.0lf\n", retquad(b, h));
+	return 0;
+}
+/*Faça uma função capaz de receber dois números b e h que representam os lados de um
+retângulo ou quadrado, e retornar 1 se ele for um quadrado ou 0 se for um retângulo.*/
