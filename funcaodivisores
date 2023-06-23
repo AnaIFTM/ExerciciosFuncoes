@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+void imprimeDivisores(int x){
+	int i;
+	for (i=1; i<=x; i++){
+		if (x%i==0){
+			printf("%d\n", i);
+		}
+	}
+}
+int main(){
+	int x;
+	scanf("%d", &x);
+	imprimeDivisores(x);
+	return 0;
+}
+/*Faça uma função que receba um número positivo e imprima todos os seus divisores.
+Exemplo: os divisores do número 66 são: 1, 2, 3, 6, 11, 22, 33 e 66.*/
