@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <tgmath.h>
+double maior(double x, double y){
+	double m;
+	if (x>y){
+		m=x;
+	}
+	else{
+		if (y>x){
+		m=y;
+		}
+	}
+	return m;
+}
+int main(){
+	double x, y, m;
+	scanf("%lf %lf", &x, &y);
+	m = maior(x, y);
+	printf("%.1lf\n", m);
+
+	return 0;
+}
